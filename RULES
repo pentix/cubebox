@@ -1,0 +1,26 @@
+* Do not push any binaryfiles
+* Commit messages in english
+* Commit messages like
+	$FILEPATH: $MESSAGE
+
+* Do not change anything on an other person's branch, unless you're asked to do something
+* Document your functions using the doxygen syntax (Have a look at cubebox.c)
+* Because of multiple threads, we use prefixes for variables and functions:
+	L for Local           variables
+	I for Init            variables
+	E for Event and sound variables 
+	G for Graphic         variables
+	T for Thread          variables
+	For example: 'Lvar'
+	
+	If there are variables and functions that belong to multiple sections,
+	we combine the prefixes in alphabetical order.
+	'EGvar', 'EGSvar'
+	
+	Note that the variables with the EG prefix should be locked before using.
+
+* We use the 4-tab-tabulator ('\t')
+* Merge your branch into "dev" if you can compile your code, but it may have errors in-game
+* Merge "dev" into "master" if you can compile the code and there are no significant errors
+* All non-local structures start with an underscore
+* Have fun!
